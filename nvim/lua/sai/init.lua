@@ -1,5 +1,5 @@
-require("sai.lsp")
-require("sai.telescope")
+require "sai.lsp"
+require "sai.telescope"
 
 P = function(v)
   print(vim.inspect(v))

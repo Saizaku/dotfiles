@@ -13,8 +13,8 @@ local source_mapping = {
 	path = "[Path]",
 }
 local lspkind = require("lspkind")
-require('lspkind').init({
-    with_text = true,
+lspkind.init({
+    mode = 'text'
 })
 
 cmp.setup({
@@ -88,6 +88,9 @@ end
 
 
 require("lspconfig").ccls.setup(config())
+require("lspconfig").java_language_server.setup{
+    cmd = { "sh", "~/java-laguage-server/dist/lang_server_linux.sh"}
+}
 
 local opts = {
 	-- whether to highlight the currently hovered symbol
