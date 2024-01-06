@@ -30,6 +30,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# Setup dual monitors in correct layou
+#exec ./~/scripts/dual-monitor-setup.sh
+
 # Set desktop background
 exec --no-startup-id feh --bg-scale ~/MEGAsync/JoJo\ Wallpapers/wp2200995-jojos-bizarre-adventure-wallpapers.jpg
 
